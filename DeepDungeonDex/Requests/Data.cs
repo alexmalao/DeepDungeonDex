@@ -17,7 +17,7 @@ namespace DeepDungeonDex.Requests
         private readonly CancellationTokenSource token = new();
         private readonly Thread loadThread;
         public static HttpClient Client = new();
-        public const string BaseUrl = "https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/data";
+        public const string BaseUrl = "https://raw.githubusercontent.com/alexmalao/DeepDungeonDex/data";
         public static TimeSpan CacheTime = TimeSpan.FromHours(6);
         public StorageHandler Handler;
 

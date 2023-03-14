@@ -10,7 +10,7 @@ namespace DeepDungeonDexConsole
     {
         public static void Main(string[] args)
         {
-            var str = new HttpClient().GetStringAsync("https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/data/Job.yml").Result;
+            var str = new HttpClient().GetStringAsync("https://raw.githubusercontent.com/alexmalao/DeepDungeonDex/data/Job.yml").Result;
             var dict = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build().Deserialize<Dictionary<uint, Weakness>>(str);
 
             foreach (var (_key, _weakness) in dict)
