@@ -121,7 +121,7 @@ namespace DeepDungeonDex.Windows
                 {
                     Aggro = Aggro.Undefined,
                     Id = id,
-                    Description = id.ToString();
+                    Description = id.ToString(),
                     Threat = Threat.Undefined,
                     Weakness = Weakness.BindUnknown | Weakness.HeavyUnknown | Weakness.SleepUnknown | Weakness.SlowUnknown | Weakness.StunUnknown | Weakness.UndeadUnknown
                 };
